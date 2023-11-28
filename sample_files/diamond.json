@@ -1,0 +1,45 @@
+{
+    "layoutDirection": "left-right",
+    "nodes": {
+        "INPUT_0": {
+            "name": "Input 0"
+        },
+        "Mul": {
+            "name": "Mul",
+            "op": "Mul"
+        },
+        "Add": {
+            "name": "Add",
+            "op": "Add"
+        },
+        "Bias": {
+            "name": "Bias",
+            "op": "Const"
+        },
+        "OUTPUT": {
+            "name": "Output"
+        }
+    },
+    "connections": [
+        {
+            "from": "INPUT_0",
+            "to": "Add"
+        },
+        {
+            "from": "Bias",
+            "to": "Add"
+        },
+        {
+            "from": "INPUT_0",
+            "to": "Mul"
+        },
+        {
+            "from": "Add",
+            "to": "Mul"
+        },
+        {
+            "from": "Mul",
+            "to": "OUTPUT"
+        }
+    ]
+}

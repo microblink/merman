@@ -1,0 +1,35 @@
+{
+    "layoutDirection": "left-righ",
+    "nodes": {
+        "A": {
+            "name": "Node A",
+            "op": "OP A"
+        },
+        "B": {
+            "name": "Node B",
+            "op": "OP B"
+        },
+        "C": {
+            "name": "Node C",
+            "op": "OP C"
+        },
+        "D": {
+            "name": "Node D",
+            "op": "OP D"
+        }
+    },
+    "connections": [
+        {
+            "from": "A",
+            "to": "B"
+        },
+        {
+            "from": "B",
+            "to": "C"
+        },
+        {
+            "from": "B",
+            "to": "D"
+        }
+    ]
+}
